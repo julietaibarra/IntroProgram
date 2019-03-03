@@ -8,3 +8,17 @@ def maximo(lista):
 lista=[1,5,9,56,29,50]
 
 print(maximo(lista))
+
+
+
+#for i in range(len(lista)):
+        #lista_cantidad.append(len(i))
+def maximoIndice(lista):
+    maxi=lista[0]
+    for i in range(len(lista)):
+        if lista[i]>maxi:
+            maxi=lista[i]
+            indice=i
+    return indice
+lista=[977,465,9887,456,3,123,7888]
+print(maximoIndice(lista))
